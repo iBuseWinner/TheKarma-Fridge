@@ -1,0 +1,75 @@
+settings:
+  prefix: '&f[&eАвтомат&f]'
+  location:
+  - 229 65 13
+messages:
+  full: '%prefix% У вас полный запас еды!'
+  notmoney: '&f[&cАвтомат&f] Товар стоит &a%price%$&f. Вам не хватает &a%money%$ &fдля совершения покупки!'
+  buy: '&f[&aАвтомат&f] Покупка прошла успешно.'
+inventory:
+  name: '&lВыберите еду'
+  items:
+    '1':
+      name: '&eКартофель-Фри'
+      price: 220
+      material: http://textures.minecraft.net/texture/6a82e11d5a64c6d653f3a1c53c9420a153818e67dbd8e93442c35c627e0c631
+      lore:
+      - ' '
+      - '&7Цена: &a220$'
+      - ' '
+      food: 5
+    '2':
+      name: '&eСэндвич'
+      price: 260
+      material: http://textures.minecraft.net/texture/9496589fb5c1f69387b7fb17d92312058ff6e8ebeb3eb89e4f73e78196113b
+      lore:
+      - ' '
+      - '&7Цена: &a260$'
+      - ' '
+      food: 7
+    '3':
+      name: '&eБургер'
+      price: 300
+      material: http://textures.minecraft.net/texture/a6ef1c25f516f2e7d6f7667420e33adcf3cdf938cb37f9a41a8b35869f569b
+      lore:
+      - ' '
+      - '&7Цена: &a300$'
+      - ' '
+      food: 9
+    '4':
+      name: '&eКрылышки'
+      price: 340
+      material: http://textures.minecraft.net/texture/b8fb0502a3aa5f8bd32a5ea5e519c3dd353234170dfef959ee8adb9487fea
+      lore:
+      - ' '
+      - '&7Цена: &a340$'
+      - ' '
+      food: 12
+    '5':
+      name: '&eПицца'
+      price: 380
+      material: http://textures.minecraft.net/texture/2f6d72e39aec77cd61ebb49a442db9acfa4cd752ed851d95488f954cc36e52
+      lore:
+      - ' '
+      - '&7Цена: &a380$'
+      - ' '
+      food: 14
+    '6':
+      name: '&eКурица с салатом'
+      price: 420
+      material: http://textures.minecraft.net/texture/68c03eebf7d4cef7648f3cd94b3b933485ddd6df84b4a9827927c15f33ad2641
+      lore:
+      - ' '
+      - '&7Цена: &a420$'
+      - ' '
+      food: 16
+    '7':
+      name: '&eКомплексный Обед'
+      price: 700
+      material: http://textures.minecraft.net/texture/718e15b3d41082e4d549128126f944bf3d3ea171a198aa30a4b7ef77fb2dc
+      lore:
+      - ' '
+      - '&7Цена: &a700$'
+      - ' '
+      food: 20
+    
