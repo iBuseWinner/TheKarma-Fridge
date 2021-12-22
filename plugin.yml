@@ -1,0 +1,5 @@
+name: TheKarma-Fridge
+main: ru.thekarma.fridge.SpigotPlugin
+version: 0.1
+author: _Karma_YT
+depend: [Vault]
