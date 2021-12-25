@@ -13,7 +13,7 @@ public class ConfigUtils {
 		 return ColorUtils.ColorChat(plugin.getConfig().getString("settings.prefix"));
 	}
 	
-	public static long getBalance(Player p, int i) {
+	public static double getBalance(Player p, int i) {
 		 return getPrice(i) - VaultManager.getmoney(p);
 	}
 
