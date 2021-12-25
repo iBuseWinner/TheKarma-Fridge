@@ -2,17 +2,14 @@ package ru.thekarma.fridge;
 
 import java.io.File;
 import org.bukkit.Bukkit;
-
-import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import ru.thekarma.fridge.events.PlayerListener;
 import ru.thekarma.fridge.utils.*;
 
-public class SpigotPlugin extends JavaPlugin implements Listener {
-	public static SpigotPlugin plugin;
+public class SpigotPlugin extends JavaPlugin {
+	public SpigotPlugin plugin;
 	public static Inventory inv;
 	
     @Override
@@ -24,13 +21,13 @@ public class SpigotPlugin extends JavaPlugin implements Listener {
           getConfig().options().copyDefaults(true);
           saveDefaultConfig();
         } 
-        Bukkit.getPluginManager().registerEvents((Listener)new PlayerListener(this), (Plugin)this);
-        this.getLogger().info("Plugin enabled! By _Karma_YT :D");
+        Bukkit.getPluginManager().registerEvents(new PlayerListener(this), this);
+        this.getLogger().info("Plugin enabled!");
     }
 
     @Override
     public void onDisable() {
-        this.getLogger().info("Plugin disabled! By _Karma_YT D:");
+        this.getLogger().info("Plugin disabled!");
     }
 	
 	private void openFridgeGui() {
