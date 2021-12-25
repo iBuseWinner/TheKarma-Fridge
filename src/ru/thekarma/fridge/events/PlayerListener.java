@@ -36,26 +36,8 @@ public class PlayerListener implements Listener
 				p.closeInventory();
 				return;
 			}
-			if(event.getSlot() == 0) {
-				InvClickUtils.getClicked(p, 1);
-			}
-			if(event.getSlot() == 1) {
-				InvClickUtils.getClicked(p, 2);
-			}
-			if(event.getSlot() == 2) {
-				InvClickUtils.getClicked(p, 3);
-			}
-			if(event.getSlot() == 3) {
-				InvClickUtils.getClicked(p, 4);
-			}
-			if(event.getSlot() == 4) {
-				InvClickUtils.getClicked(p, 5);
-			}
-			if(event.getSlot() == 5) {
-				InvClickUtils.getClicked(p, 6);
-			}
-			if(event.getSlot() == 6) {
-				InvClickUtils.getClicked(p, 7);
+			if(event.getSlot() >= 0 && event.getSlot() <= 6) {
+				InvClickUtils.getClicked(p, event.getSlot()+1);
 			}
 			p.closeInventory();
 		}
