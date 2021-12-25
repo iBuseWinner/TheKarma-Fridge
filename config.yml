@@ -1,7 +1,7 @@
 settings:
   prefix: '&f[&eАвтомат&f]'
   location:
-  - 229 65 13
+  - world; 229 65 13
 messages:
   full: '%prefix% У вас полный запас еды!'
   notmoney: '&f[&cАвтомат&f] Товар стоит &a%price%$&f. Вам не хватает &a%money%$ &fдля совершения покупки!'
